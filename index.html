@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LazyMe Service</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .hero-bg {
+            background: url('./back.gif') center center/auto 100% no-repeat;
+            color: #B0E3FF;
+        }
+
+        body {
+            background-color: #0f0d1d;
+            color: #B0E3FF;
+        }
+
+        header, footer {
+            background-color: #1A1C20;
+        }
+
+        .button-primary {
+            background-color: #00A3E0;
+            border-color: #00A3E0;
+            color: #101820;
+        }
+
+        .button-primary:hover {
+            background-color: #00BCD4;
+            border-color: #00BCD4;
+            color: #FFF;
+        }
+
+        .feature-card {
+            background-color: #1A1C20;
+            color: #B0E3FF;
+        }
+
+        .bg-dark {
+            background-color: #1A1C20;
+        }
+
+        .bg-light {
+            background-color: #101820;
+        }
+    </style>
+</head>
+
+<body class="text-gray-200">
+    <!-- Header Section -->
+    <header class="bg-dark text-white p-4 flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="https://via.placeholder.com/40" alt="LazyMe Logo" class="h-8 w-8 mr-2">
+            <span class="text-xl font-semibold">LazyMe</span>
+        </div>
+        <nav>
+            <a href="#features" class="px-4">Features</a>
+            <a href="#testimonials" class="px-4">Testimonials</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-screen flex flex-col justify-center items-center text-white">
+        <h1 class="text-5xl font-bold animate__animated animate__fadeInDown">Simplify Your Life with LazyMe</h1>
+        <p class="text-lg my-4 animate__animated animate__fadeInUp">Your personal assistant for everyday tasks, right at your fingertips.</p>
+        <div class="flex space-x-4">
+            <a href="https://t.me/lazy_me_bot" class="button-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Get Started</a>
+            <a href="https://t.me/ant1kvar" class="button-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Ask Me Anything</a>
+        </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section id="features" class="py-12 bg-light">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">What We Offer</h2>
+            <div class="flex justify-around">
+                <div class="flex flex-col items-center shadow-lg p-4 feature-card animate__animated animate__fadeInLeft">
+                    <i class="fas fa-phone fa-2x mb-4 text-blue-500"></i>
+                    <h3 class="text-xl font-semibold mb-2">Personalized Automated Calls</h3>
+                    <p>We make the calls so you don't have to. Just say the word, and we'll handle the rest.</p>
+                </div>
+                <div class="flex flex-col items-center shadow-lg p-4 feature-card animate__animated animate__fadeInUp">
+                    <i class="fas fa-hotel fa-2x mb-4 text-blue-500"></i>
+                    <h3 class="text-xl font-semibold mb-2">Effortless Hotel Bookings</h3>
+                    <p>Need a place to stay? Let us find and book the perfect hotel for you.</p>
+                </div>
+                <div class="flex flex-col items-center shadow-lg p-4 feature-card animate__animated animate__fadeInRight">
+                    <i class="fas fa-tasks fa-2x mb-4 text-blue-500"></i>
+                    <h3 class="text-xl font-semibold mb-2">Task Management Made Easy</h3>
+                    <p>Delegate your daily chores and focus on what really matters.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Individual Feature Sections -->
+    <section class="py-12 bg-dark">
+        <div class="container mx-auto flex flex-wrap">
+            <div class="w-full md:w-1/2 p-8">
+                <h2 class="text-3xl font-bold mb-4">Automated Calls</h2>
+                <p class="mb-4">Don’t like making phone calls? Neither do we. With LazyMe, you can have your calls handled smoothly and professionally, without the hassle.</p>
+                <a href="https://t.me/lazy_me_bot" class="button-primary text-white font-bold py-2 px-4 rounded">Let's do it!</a>
+            </div>
+            <div class="w-full md:w-1/4 p-8">
+                <img src="./calls.webp" alt="Automated Calls Image" class="rounded">
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-light">
+        <div class="container mx-auto flex flex-wrap">
+            <div class="w-full md:w-1/4 p-8 order-2 md:order-1">
+                <img src="./hotels.webp" alt="Hotel Booking Image" class="rounded">
+            </div>
+            <div class="w-full md:w-1/2 p-8 order-1 md:order-2">
+                <h2 class="text-3xl font-bold mb-4">Hotel Booking</h2>
+                <p class="mb-4">Find and book your stay with a single command. LazyMe simplifies the process, leaving you with more time to enjoy your trip.</p>
+                <a href="https://t.me/lazy_me_bot" class="button-primary text-white font-bold py-2 px-4 rounded">Let's do it!</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-dark">
+        <div class="container mx-auto flex flex-wrap">
+            <div class="w-full md:w-1/2 p-8">
+                <h2 class="text-3xl font-bold mb-4">Task Assistance</h2>
+                <p class="mb-4">Whether it’s booking a service or managing daily tasks, LazyMe is here to make your life simpler, more manageable, and entirely in your control.</p>
+                <a href="https://t.me/lazy_me_bot" class="button-primary text-white font-bold py-2 px-4 rounded">Let's do it!</a>
+            </div>
+            <div class="w-full md:w-1/2 p-8">
+                <img src="./task.webp" alt="Task Assistance Image" class="rounded">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimonials" class="py-12 bg-light">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">What Our Users Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-dark p-8 shadow-lg animate__animated animate__slideInLeft">
+                    <p class="mb-4">"LazyMe made it so easy to manage my tasks. It’s like having a personal assistant in my pocket!"</p>
+                    <span class="font-bold">- Jane Doe, Freelancer</span>
+                </div>
+                <div class="bg-dark p-8 shadow-lg animate__animated animate__slideInRight">
+                    <p class="mb-4">"Booking hotels is now a breeze thanks to LazyMe. It takes care of everything for me!"</p>
+                    <span class="font-bold">- John Smith, Traveler</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white p-4">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center mb-4">
+                <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-facebook"></i></a>
+            </div>
+            <p>&copy; 2024 LazyMe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function () {
+            $('#contactForm').on('submit', function (e) {
+                e.preventDefault();
+                // Handle form submission with smooth interaction
+                alert('Form submitted successfully!');
+            });
+        });
+    </script>
+</body>
+
+</html>
